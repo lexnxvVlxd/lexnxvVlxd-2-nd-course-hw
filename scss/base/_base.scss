@@ -1,0 +1,29 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: inherit;
+}
+
+a, 
+button {
+  cursor: url(./../../img/cursor.png), pointer;
+}

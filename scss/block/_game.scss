@@ -1,0 +1,51 @@
+.game {
+  background-color: var(--colorBgSection);
+
+
+  &__content {
+    padding-block: 128px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+
+  &__link {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180.00deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%);
+      border-radius: var(--BrImg);
+      z-index: 10;
+      outline: 3px solid transparent;
+      transition: outline var(--tranDur) var(--tranTf);
+    }
+
+    &:hover::after {
+      outline: 3px solid rgb(68, 210, 255);
+    }
+  }
+
+  &__img {
+    border-radius: var(--BrImg);
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    color: var(--colorWhite);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    z-index: 20;
+  }
+}
