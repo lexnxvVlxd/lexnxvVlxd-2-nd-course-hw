@@ -203,8 +203,15 @@ button {
   background-color: var(--colorBtn);
   border-radius: 30px;
 }
-.banner__btn:hover {
-  background-color: var(--colorBtnHover);
+@media (hover: hover) {
+  .banner__btn:hover {
+    background-color: var(--colorBtnHover);
+  }
+}
+@media (hover: none) {
+  .banner__btn:active {
+    background-color: var(--colorBtnHover);
+  }
 }
 
 .game {
@@ -234,8 +241,15 @@ button {
   z-index: 10;
   outline: 3px solid transparent;
 }
-.game__link:hover::after {
-  outline: 3px solid rgb(68, 210, 255);
+@media (hover: hover) {
+  .game__link:hover::after {
+    outline: 3px solid rgb(68, 210, 255);
+  }
+}
+@media (hover: none) {
+  .game__link:active::after {
+    outline: 3px solid rgb(68, 210, 255);
+  }
 }
 .game__img {
   border-radius: var(--BrImg);

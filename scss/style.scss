@@ -1,9 +1,12 @@
 // Base
-@import './base/reset';
-@import './base/base';
-@import './base/vars';
+@import 
+  './base/reset',
+  './base/base',
+  './base/vars',
+  './base/mixin';
 
 // block
 
-@import './block/banner';
-@import './block/game';
+@import 
+  './block/banner',
+  './block/game';

@@ -27,7 +27,7 @@
     background-color: var(--colorBtn);
     border-radius: 30px;
 
-    &:hover {
+    @include hover {
       background-color: var(--colorBtnHover);
     }
   }
