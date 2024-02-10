@@ -17,6 +17,12 @@
     padding-top: 32px;
     padding-bottom: 44px;
     line-height: 32px;
+    color: lightgray;
+
+    &--textBold {
+      font-weight: 700;
+      color: var(--colorWhite);
+    }
   }
 
   &__btn {
@@ -26,9 +32,8 @@
     padding-inline: 74px;
     background-color: var(--colorBtn);
     border-radius: 30px;
-    transition: background-color var(--tranDur) var(--tranTf);
 
-    &:hover {
+    @include hover {
       background-color: var(--colorBtnHover);
     }
   }
