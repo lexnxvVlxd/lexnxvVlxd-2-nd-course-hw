@@ -194,6 +194,11 @@ button {
   padding-top: 32px;
   padding-bottom: 44px;
   line-height: 32px;
+  color: lightgray;
+}
+.banner__desc--textBold {
+  font-weight: 700;
+  color: var(--colorWhite);
 }
 .banner__btn {
   font-size: 18px;
