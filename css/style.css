@@ -114,10 +114,9 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 1230px;
-  padding-inline: 15px;
+  max-width: calc(var(--containerWidth) + var(--containerPadding-x) * 2);
   margin-inline: auto;
+  padding-inline: var(--containerPadding-x);
 }
 
 button {
@@ -146,6 +145,8 @@ button {
   --tranDur: 0.2s;
   --tranTf: ease-in-out;
   --BrImg: 16px;
+  --containerWidth: 1200px;
+  --containerPadding-x: 15px;
 }
 
 .banner {
