@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/**
+  Нормализация блочной модели
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+  Убираем внутренние отступы слева тегам списков,
+  у которых есть атрибут class
+ */
+:where(ul, ol):where([class]) {
+  padding-left: 0;
+}
+
+/**
+  Убираем внешние отступы body и двум другим тегам,
+  у которых есть атрибут class
+ */
+body,
+:where(blockquote, figure):where([class]) {
+  margin: 0;
+}
+
+/**
+  Убираем внешние отступы вертикали нужным тегам,
+  у которых есть атрибут class
+ */
+:where(h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl):where([class]) {
+  margin-block: 0;
+}
+
+:where(dd[class]) {
+  margin-left: 0;
+}
+
+/**
+  Убираем стандартный маркер маркированному списку,
+  у которого есть атрибут class
+ */
+:where(ul[class]) {
+  list-style: none;
+}
+
+/**
+  Упрощаем работу с изображениями
+ */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/**
+  Наследуем свойства шрифт для полей ввода
+ */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+html {
+  /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  height: 100%;
+  /**
+    Плавный скролл
+   */
+  scroll-behavior: smooth;
+}
+
+body {
+  /**
+    Пригодится в большинстве ситуаций
+    (когда, например, нужно будет "прижать" футер к низу сайта)
+   */
+  min-height: 100%;
+  /**
+    Унифицированный интерлиньяж
+   */
+  line-height: 1.5;
+}
+
+/**
+  Удаляем все анимации и переходы для людей,
+  которые предпочитают их не использовать
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  padding-inline: 15px;
+  margin-inline: auto;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+  color: inherit;
+}
+
+a,
+button {
+  cursor: url(./../../img/cursor.png), pointer;
+}
+
+:root {
+  --colorWhite: #fff;
+  --colorBtn: #9C0332;
+  --colorBtnHover: #EB443F;
+  --colorBgSection: #000915;
+  --tranDur: 0.2s;
+  --tranTf: ease-in-out;
+  --BrImg: 16px;
+}
+
+.banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.355%, rgb(0, 0, 0) 100%), url(./../img/bannerBg.jpeg) center/cover no-repeat;
+  color: var(--colorWhite);
+}
+.banner__body {
+  padding-top: 220px;
+  padding-bottom: 490px;
+}
+.banner__title {
+  font-size: 64px;
+  line-height: 78px;
+}
+.banner__desc {
+  max-width: 480px;
+  padding-top: 32px;
+  padding-bottom: 44px;
+  line-height: 32px;
+}
+.banner__btn {
+  font-size: 18px;
+  line-height: 22px;
+  padding-block: 13px;
+  padding-inline: 74px;
+  background-color: var(--colorBtn);
+  border-radius: 30px;
+  transition: background-color var(--tranDur) var(--tranTf);
+}
+.banner__btn:hover {
+  background-color: var(--colorBtnHover);
+}
+
+.game {
+  background-color: var(--colorBgSection);
+}
+.game__content {
+  padding-block: 128px;
+}
+.game__list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.game__link {
+  position: relative;
+}
+.game__link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%);
+  border-radius: var(--BrImg);
+  z-index: 10;
+  outline: 3px solid transparent;
+  transition: outline var(--tranDur) var(--tranTf);
+}
+.game__link:hover::after {
+  outline: 3px solid rgb(68, 210, 255);
+}
+.game__img {
+  border-radius: var(--BrImg);
+}
+.game__text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  color: var(--colorWhite);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  z-index: 20;
+}/*# sourceMappingURL=style.css.map */
