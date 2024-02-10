@@ -9,6 +9,20 @@ body {
   padding-inline: var(--containerPadding-x);
 }
 
+a,
+button,
+input,
+svg {
+  transition-duration: var(--tranDur);
+  transition-timing-function: var(--tranTf);
+}
+
+::after,
+::before {
+  transition-duration: var(--tranDur);
+  transition-timing-function: var(--tranTf);
+}
+
 button {
   border: none;
   background-color: transparent;

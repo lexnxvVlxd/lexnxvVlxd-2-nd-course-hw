@@ -26,7 +26,6 @@
       border-radius: var(--BrImg);
       z-index: 10;
       outline: 3px solid transparent;
-      transition: outline var(--tranDur) var(--tranTf);
     }
 
     &:hover::after {

@@ -119,6 +119,20 @@ body {
   padding-inline: var(--containerPadding-x);
 }
 
+a,
+button,
+input,
+svg {
+  transition-duration: var(--tranDur);
+  transition-timing-function: var(--tranTf);
+}
+
+::after,
+::before {
+  transition-duration: var(--tranDur);
+  transition-timing-function: var(--tranTf);
+}
+
 button {
   border: none;
   background-color: transparent;
@@ -174,7 +188,6 @@ button {
   padding-inline: 74px;
   background-color: var(--colorBtn);
   border-radius: 30px;
-  transition: background-color var(--tranDur) var(--tranTf);
 }
 .banner__btn:hover {
   background-color: var(--colorBtnHover);
@@ -206,7 +219,6 @@ button {
   border-radius: var(--BrImg);
   z-index: 10;
   outline: 3px solid transparent;
-  transition: outline var(--tranDur) var(--tranTf);
 }
 .game__link:hover::after {
   outline: 3px solid rgb(68, 210, 255);

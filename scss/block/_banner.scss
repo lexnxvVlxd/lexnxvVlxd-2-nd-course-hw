@@ -26,7 +26,6 @@
     padding-inline: 74px;
     background-color: var(--colorBtn);
     border-radius: 30px;
-    transition: background-color var(--tranDur) var(--tranTf);
 
     &:hover {
       background-color: var(--colorBtnHover);
