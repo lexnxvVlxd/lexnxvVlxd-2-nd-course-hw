@@ -179,6 +179,25 @@ button {
   --containerPadding-x: 15px;
 }
 
+button {
+  font-size: 18px;
+  line-height: 22px;
+  padding-block: 13px;
+  padding-inline: 74px;
+  background-color: var(--colorBtn);
+  border-radius: 30px;
+}
+@media (hover: hover) {
+  button:hover {
+    background-color: var(--colorBtnHover);
+  }
+}
+@media (hover: none) {
+  button:active {
+    background-color: var(--colorBtnHover);
+  }
+}
+
 .banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.355%, rgb(0, 0, 0) 100%), url(./../img/bannerBg.jpeg) center/cover no-repeat;
   color: var(--colorWhite);
@@ -192,33 +211,27 @@ button {
   line-height: 78px;
 }
 .banner__desc {
+  font-weight: 300;
   max-width: 480px;
   padding-top: 32px;
   padding-bottom: 44px;
   line-height: 32px;
-  color: lightgray;
 }
 .banner__desc--textBold {
   font-weight: 700;
   color: var(--colorWhite);
 }
-.banner__btn {
-  font-size: 18px;
-  line-height: 22px;
-  padding-block: 13px;
-  padding-inline: 74px;
-  background-color: var(--colorBtn);
-  border-radius: 30px;
+
+.seasons {
+  padding-block: 230px;
 }
-@media (hover: hover) {
-  .banner__btn:hover {
-    background-color: var(--colorBtnHover);
-  }
+.seasons__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@media (hover: none) {
-  .banner__btn:active {
-    background-color: var(--colorBtnHover);
-  }
+.seasons__body {
+  max-width: 585px;
 }
 
 .game__content {
