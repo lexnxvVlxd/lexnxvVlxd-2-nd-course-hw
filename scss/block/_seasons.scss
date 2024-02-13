@@ -10,4 +10,8 @@
   &__body {
     max-width: 585px;
   }
+
+  &__title {
+    @include fluidText(32, 48)
+  }
 }

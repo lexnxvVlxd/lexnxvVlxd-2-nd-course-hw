@@ -233,6 +233,9 @@ button {
 .seasons__body {
   max-width: 585px;
 }
+.seasons__title {
+  font-size: clamp(32px, 3.3333333333vw, 48px);
+}
 
 .game__content {
   padding-block: 128px;
