@@ -5,16 +5,30 @@
   &__body {
     padding-top: 220px;
     padding-bottom: 490px;
+
+    @include desktop {
+      padding-top: 200px;
+      padding-bottom: 400px;
+    }
+
+    @include tablet {
+      padding-top: 180px;
+      padding-bottom: 280px;
+    }
   }
 
   &__title {
     @include fluidText(32, 64);
 
     line-height: 78px;
+
+    @include desktop {
+      line-height: var(--lineHeightNormal)
+    }
   }
 
   &__desc {
-    @include fluidText(18, 14);
+    @include fluidText(14, 18);
 
     font-weight: 300;
     max-width: 480px;
@@ -25,6 +39,16 @@
     &--textBold {
       font-weight: 700;
       color: var(--colorWhite);
+    }
+
+    @include tablet {
+      line-height: var(--lineHeightNormal);
+      max-width: 345px;
+    }
+
+    @include desktop {
+      padding-top: 10px;
+      padding-bottom: 25px;
     }
   }
 }

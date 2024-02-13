@@ -1,10 +1,19 @@
 .seasons {
   padding-block: 230px;
 
+  @include desktop {
+    padding-block: 180px;
+  }
+
+  @include tablet {
+  padding-block: var(--tabletPaddingSection);
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 20px;
   }
 
   &__body {
@@ -16,10 +25,19 @@
   }
 
   &__desc {
-    @include fluidText(18, 14);
+  @include fluidText(14, 18);
 
     font-weight: 300;
     line-height: 32px;
     padding-block: 32px;
+
+    @include desktop {
+      padding-block: 14px;
+    }
+
+    @include tablet {
+      max-width: 345px;
+      line-height: var(--lineHeightNormal);
+    }
   }
 }
