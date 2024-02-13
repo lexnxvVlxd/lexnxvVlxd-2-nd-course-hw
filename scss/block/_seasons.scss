@@ -9,11 +9,21 @@
   padding-block: var(--tabletPaddingSection);
   }
 
+  @include mobile {
+    padding-block: 51px;
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 20px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 65px;
+      text-align: center;
+    }
   }
 
   &__body {
@@ -38,6 +48,10 @@
     @include tablet {
       max-width: 345px;
       line-height: var(--lineHeightNormal);
+    }
+
+    @include mobile {
+      padding-block: 32px;
     }
   }
 }

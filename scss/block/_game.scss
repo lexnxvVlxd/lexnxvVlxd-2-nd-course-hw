@@ -12,6 +12,11 @@
     @include desktop {
       column-gap: 20px;
     }
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 32px;
+    }
   }
 
   &__link {
