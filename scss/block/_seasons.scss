@@ -12,6 +12,14 @@
   }
 
   &__title {
-    @include fluidText(32, 48)
+    @include fluidText(32, 48);
+  }
+
+  &__desc {
+    @include fluidText(18, 14);
+
+    font-weight: 300;
+    line-height: 32px;
+    padding-block: 32px;
   }
 }
