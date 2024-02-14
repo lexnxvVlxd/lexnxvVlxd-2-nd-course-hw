@@ -3,10 +3,13 @@
   './base/reset',
   './base/base',
   './base/vars',
-  './base/mixin';
+  './base/mixin',
+  './base/media';
 
 // block
 
 @import 
+  './block/btn',
   './block/banner',
+  './block/seasons',
   './block/game';

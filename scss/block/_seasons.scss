@@ -1,0 +1,57 @@
+.seasons {
+  padding-block: 230px;
+
+  @include desktop {
+    padding-block: 180px;
+  }
+
+  @include tablet {
+  padding-block: var(--tabletPaddingSection);
+  }
+
+  @include mobile {
+    padding-block: 51px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+
+    @include mobile {
+      flex-direction: column;
+      row-gap: 65px;
+      text-align: center;
+    }
+  }
+
+  &__body {
+    max-width: 585px;
+  }
+
+  &__title {
+    @include fluidText(32, 48);
+  }
+
+  &__desc {
+  @include fluidText(14, 18);
+
+    font-weight: 300;
+    line-height: 32px;
+    padding-block: 32px;
+
+    @include desktop {
+      padding-block: 14px;
+    }
+
+    @include tablet {
+      max-width: 345px;
+      line-height: var(--lineHeightNormal);
+    }
+
+    @include mobile {
+      padding-block: 32px;
+    }
+  }
+}

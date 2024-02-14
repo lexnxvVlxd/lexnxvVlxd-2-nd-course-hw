@@ -177,6 +177,27 @@ button {
   --BrImg: 16px;
   --containerWidth: 1200px;
   --containerPadding-x: 15px;
+  --lineHeightNormal: 1.28;
+  --tabletPaddingSection: 128px;
+}
+
+button {
+  font-size: 18px;
+  line-height: 22px;
+  padding-block: 13px;
+  padding-inline: 74px;
+  background-color: var(--colorBtn);
+  border-radius: 30px;
+}
+@media (hover: hover) {
+  button:hover {
+    background-color: var(--colorBtnHover);
+  }
+}
+@media (hover: none) {
+  button:active {
+    background-color: var(--colorBtnHover);
+  }
 }
 
 .banner {
@@ -187,48 +208,146 @@ button {
   padding-top: 220px;
   padding-bottom: 490px;
 }
+@media (max-width: 1280px) {
+  .banner__body {
+    padding-top: 200px;
+    padding-bottom: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .banner__body {
+    padding-top: 180px;
+    padding-bottom: 280px;
+  }
+}
+@media (max-width: 767px) {
+  .banner__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 .banner__title {
-  font-size: 64px;
+  font-size: clamp(32px, 4.4444444444vw, 64px);
   line-height: 78px;
 }
+@media (max-width: 1280px) {
+  .banner__title {
+    line-height: var(--lineHeightNormal);
+  }
+}
 .banner__desc {
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 300;
   max-width: 480px;
   padding-top: 32px;
   padding-bottom: 44px;
   line-height: 32px;
-  color: lightgray;
 }
 .banner__desc--textBold {
   font-weight: 700;
   color: var(--colorWhite);
 }
-.banner__btn {
-  font-size: 18px;
-  line-height: 22px;
-  padding-block: 13px;
-  padding-inline: 74px;
-  background-color: var(--colorBtn);
-  border-radius: 30px;
-}
-@media (hover: hover) {
-  .banner__btn:hover {
-    background-color: var(--colorBtnHover);
+@media (max-width: 1024px) {
+  .banner__desc {
+    line-height: var(--lineHeightNormal);
+    max-width: 345px;
   }
 }
-@media (hover: none) {
-  .banner__btn:active {
-    background-color: var(--colorBtnHover);
+@media (max-width: 1280px) {
+  .banner__desc {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .banner__desc {
+    padding-block: 32px;
+  }
+}
+
+.seasons {
+  padding-block: 230px;
+}
+@media (max-width: 1280px) {
+  .seasons {
+    padding-block: 180px;
+  }
+}
+@media (max-width: 1024px) {
+  .seasons {
+    padding-block: var(--tabletPaddingSection);
+  }
+}
+@media (max-width: 767px) {
+  .seasons {
+    padding-block: 51px;
+  }
+}
+.seasons__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (max-width: 767px) {
+  .seasons__content {
+    flex-direction: column;
+    row-gap: 65px;
+    text-align: center;
+  }
+}
+.seasons__body {
+  max-width: 585px;
+}
+.seasons__title {
+  font-size: clamp(32px, 3.3333333333vw, 48px);
+}
+.seasons__desc {
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 300;
+  line-height: 32px;
+  padding-block: 32px;
+}
+@media (max-width: 1280px) {
+  .seasons__desc {
+    padding-block: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .seasons__desc {
+    max-width: 345px;
+    line-height: var(--lineHeightNormal);
+  }
+}
+@media (max-width: 767px) {
+  .seasons__desc {
+    padding-block: 32px;
   }
 }
 
 .game__content {
-  padding-block: 128px;
+  padding-block: var(--tabletPaddingSection);
 }
 .game__list {
   display: flex;
   align-items: center;
   -moz-column-gap: 32px;
        column-gap: 32px;
+}
+@media (max-width: 1280px) {
+  .game__list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .game__list {
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }
 .game__link {
   position: relative;

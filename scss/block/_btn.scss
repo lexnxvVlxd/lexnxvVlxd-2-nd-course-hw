@@ -1,0 +1,12 @@
+button {
+  font-size: 18px;
+  line-height: 22px;
+  padding-block: 13px;
+  padding-inline: 74px;
+  background-color: var(--colorBtn);
+  border-radius: 30px;
+
+  @include hover {
+    background-color: var(--colorBtnHover);
+  }
+}
