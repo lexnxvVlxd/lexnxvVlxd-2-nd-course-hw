@@ -32,58 +32,68 @@
 
 // Задание 5
 
-let monthNumber = 12
+// let monthNumber = 12
 
-switch (monthNumber) {
-  case 12:
-    console.log('Декабрь пренадлежит сезону "Зима"')
-    break
+// switch (monthNumber) {
+//   case 12:
+//     console.log('Декабрь пренадлежит сезону "Зима"')
+//     break
 
-  case 1:
-    console.log('Январь пренадлежит сезону "Зима"')
-    break
+//   case 1:
+//     console.log('Январь пренадлежит сезону "Зима"')
+//     break
 
-  case 2:
-    console.log('Февраль пренадлежит сезону "Зима"')
-    break
+//   case 2:
+//     console.log('Февраль пренадлежит сезону "Зима"')
+//     break
 
-  case 3:
-    console.log('Март пренадлежит сезону "Весна"')
-    break
+//   case 3:
+//     console.log('Март пренадлежит сезону "Весна"')
+//     break
 
-  case 4:
-    console.log('Апрель пренадлежит сезону "Весна"')
-    break
+//   case 4:
+//     console.log('Апрель пренадлежит сезону "Весна"')
+//     break
 
-  case 5:
-    console.log('Май пренадлежит сезону "Весна"')
-    break
+//   case 5:
+//     console.log('Май пренадлежит сезону "Весна"')
+//     break
 
-  case 6:
-    console.log('Июнь пренадлежит сезону "Лето"')
-    break
+//   case 6:
+//     console.log('Июнь пренадлежит сезону "Лето"')
+//     break
 
-  case 7:
-    console.log('Июль пренадлежит сезону "Лето"')
-    break
+//   case 7:
+//     console.log('Июль пренадлежит сезону "Лето"')
+//     break
 
-  case 8:
-    console.log('Август пренадлежит сезону "Лето"')
-    break
+//   case 8:
+//     console.log('Август пренадлежит сезону "Лето"')
+//     break
 
-  case 9:
-    console.log('Сентябрь пренадлежит сезону "Осень"')
-    break
+//   case 9:
+//     console.log('Сентябрь пренадлежит сезону "Осень"')
+//     break
 
-  case 10:
-    console.log('Октябрь пренадлежит сезону "Осень"')
-    break
+//   case 10:
+//     console.log('Октябрь пренадлежит сезону "Осень"')
+//     break
 
-  case 11:
-    console.log('Ноябрь пренадлежит сезону "Осень"')
-    break
+//   case 11:
+//     console.log('Ноябрь пренадлежит сезону "Осень"')
+//     break
 
-  default:
-  console.log('что то пошло не так')
-    break
+//   default:
+//   console.log('что то пошло не так')
+//     break
+// }
+
+// Задание 7
+
+let inputNum = Number(prompt('Пожалуйста, введите любое число'))
+
+if (Number.isNaN(inputNum)) {
+  console.log('Ошибка: введены не коректные данные')
+} else {
+  (inputNum % 2 === 0) ? console.log('Это чётное число') : console.log('Это не чётное число')
 }
