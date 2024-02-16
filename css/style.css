@@ -178,7 +178,12 @@ button {
   --containerWidth: 1200px;
   --containerPadding-x: 15px;
   --lineHeightNormal: 1.28;
-  --tabletPaddingSection: 128px;
+  --PaddingSection: 128px;
+}
+@media (max-width: 767px) {
+  :root {
+    --PaddingSection: calc(136px / 2);
+  }
 }
 
 button {
@@ -277,12 +282,12 @@ button {
 }
 @media (max-width: 1024px) {
   .seasons {
-    padding-block: var(--tabletPaddingSection);
+    padding-block: var(--PaddingSection);
   }
 }
 @media (max-width: 767px) {
   .seasons {
-    padding-block: 51px;
+    padding-block: var(--PaddingSection);
   }
 }
 .seasons__content {
@@ -329,7 +334,12 @@ button {
 }
 
 .game__content {
-  padding-block: var(--tabletPaddingSection);
+  padding-block: var(--PaddingSection);
+}
+@media (max-width: 767px) {
+  .game__content {
+    padding-top: 128px;
+  }
 }
 .game__list {
   display: flex;
@@ -386,4 +396,66 @@ button {
   font-weight: 600;
   line-height: 32px;
   z-index: 20;
+}
+
+.remember {
+  padding-block: 230px;
+}
+@media (max-width: 1280px) {
+  .remember {
+    padding-block: 180px;
+  }
+}
+@media (max-width: 1024px) {
+  .remember {
+    padding-block: var(--PaddingSection);
+  }
+}
+@media (max-width: 767px) {
+  .remember {
+    padding-block: var(--PaddingSection);
+  }
+}
+.remember__content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (max-width: 767px) {
+  .remember__content {
+    flex-direction: column;
+    row-gap: 65px;
+    text-align: center;
+  }
+}
+.remember__body {
+  max-width: 585px;
+}
+.remember__title {
+  font-size: clamp(32px, 3.3333333333vw, 48px);
+}
+.remember__desc {
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 300;
+  line-height: 32px;
+  padding-block: 32px;
+}
+@media (max-width: 1280px) {
+  .remember__desc {
+    padding-block: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .remember__desc {
+    max-width: 345px;
+    line-height: var(--lineHeightNormal);
+  }
+}
+@media (max-width: 767px) {
+  .remember__desc {
+    padding-block: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */

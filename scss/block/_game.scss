@@ -1,7 +1,11 @@
 .game {
 
   &__content {
-    padding-block: var(--tabletPaddingSection);
+    padding-block: var(--PaddingSection);
+
+    @include mobile {
+      padding-top: 128px;
+    }
   }
 
   &__list {

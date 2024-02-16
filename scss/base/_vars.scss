@@ -12,5 +12,9 @@
   --containerPadding-x: 15px;
 
   --lineHeightNormal: 1.28;
-  --tabletPaddingSection: 128px;
+  --PaddingSection: 128px;
+
+  @include mobile {
+    --PaddingSection: calc(136px / 2);
+  }
 }
