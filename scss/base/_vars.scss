@@ -13,6 +13,11 @@
 
   --lineHeightNormal: 1.28;
   --PaddingSection: 128px;
+  --PaddingSectionMystery: 282px;
+
+  @include tablet {
+    --PaddingSectionMystery: 242px;
+  }
 
   @include mobile {
     --PaddingSection: calc(136px / 2);

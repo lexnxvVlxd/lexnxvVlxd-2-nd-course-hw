@@ -179,6 +179,12 @@ button {
   --containerPadding-x: 15px;
   --lineHeightNormal: 1.28;
   --PaddingSection: 128px;
+  --PaddingSectionMystery: 282px;
+}
+@media (max-width: 1024px) {
+  :root {
+    --PaddingSectionMystery: 242px;
+  }
 }
 @media (max-width: 767px) {
   :root {
@@ -456,6 +462,54 @@ button {
 }
 @media (max-width: 767px) {
   .remember__desc {
+    padding-block: 32px;
+  }
+}
+
+.mystery {
+  background: linear-gradient(180deg, rgb(0, 9, 21), rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.355%, rgb(0, 9, 21) 100%), url(./../img/mystery/mysteryPic01.jpeg) center/cover no-repeat, rgb(0, 9, 21);
+}
+@media (max-width: 767px) {
+  .mystery {
+    background: linear-gradient(180deg, rgb(0, 9, 21), rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.355%, rgb(0, 0, 0) 100%), url(./../img/mystery/mysteryPicMobile.jpeg) center/cover no-repeat, rgb(0, 9, 21);
+  }
+}
+.mystery__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: var(--PaddingSectionMystery);
+}
+@media (max-width: 767px) {
+  .mystery__body {
+    padding-top: 40px;
+    padding-bottom: 487px;
+  }
+}
+.mystery__title {
+  font-size: clamp(32px, 3.3333333333vw, 48px);
+}
+.mystery__desc {
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 300;
+  line-height: 32px;
+  padding-block: 32px;
+}
+@media (max-width: 1280px) {
+  .mystery__desc {
+    padding-block: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .mystery__desc {
+    line-height: var(--lineHeightNormal);
+    max-width: 700px;
+  }
+}
+@media (max-width: 767px) {
+  .mystery__desc {
     padding-block: 32px;
   }
 }/*# sourceMappingURL=style.css.map */
