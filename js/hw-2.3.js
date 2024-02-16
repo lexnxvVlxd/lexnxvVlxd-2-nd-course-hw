@@ -90,10 +90,33 @@
 
 // Задание 7
 
-let inputNum = Number(prompt('Пожалуйста, введите любое число'))
+// let inputNum = Number(prompt('Пожалуйста, введите любое число'))
 
-if (Number.isNaN(inputNum)) {
-  console.log('Ошибка: введены не коректные данные')
+// if (Number.isNaN(inputNum)) {
+//   console.log('Ошибка: введены не коректные данные')
+// } else {
+//   (inputNum % 2 === 0) ? console.log('Это чётное число') : console.log('Это не чётное число')
+// }
+
+// Задание 8
+
+// (0 — iOS, 1 — Android)
+
+let clientOS
+let userSelectsOS = prompt('Добрый день. Какой операционной системой вы пользуетесь? Введите название ("iOS" "Android")').toLowerCase()
+
+if (userSelectsOS === 'android') {
+  clientOS = 1
+} else if (userSelectsOS === 'ios') {
+  clientOS = 0
 } else {
-  (inputNum % 2 === 0) ? console.log('Это чётное число') : console.log('Это не чётное число')
+  console.log('Ошибка: введены не коректные данные')
+}
+
+if (clientOS === 1) {
+  console.log('Вы пользуетесь операционной системой "Android". Предлагаем установить наше мобильное приложение по ссылке (https://####.ru)')
+} else if (clientOS === 0) {
+  console.log('Вы пользуетесь операционной системой "iOS". Предлагаем установить наше мобильное приложение по ссылке (https://####.ru)')
+} else {
+  console.log('')
 }
