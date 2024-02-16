@@ -512,4 +512,17 @@ button {
   .mystery__desc {
     padding-block: 32px;
   }
+}
+
+.footer__copyright {
+  padding-block: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+.footer__text {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
