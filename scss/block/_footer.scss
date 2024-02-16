@@ -1,0 +1,16 @@
+.footer {
+
+  &__copyright {
+    padding-block: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+  }
+}

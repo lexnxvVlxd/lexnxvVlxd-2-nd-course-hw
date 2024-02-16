@@ -1,0 +1,47 @@
+.mystery {
+  background: linear-gradient(180.00deg, rgb(0, 9, 21),rgba(0, 0, 0, 0) 100%),linear-gradient(180.00deg, rgba(0, 0, 0, 0) -7.355%,rgb(0, 9, 21) 100%),url(./../img/mystery/mysteryPic01.jpeg) center/cover no-repeat,rgb(0, 9, 21);
+
+  @include mobile {
+    background: linear-gradient(180.00deg, rgb(0, 9, 21),rgba(0, 0, 0, 0) 100%),linear-gradient(180.00deg, rgba(0, 0, 0, 0) -7.355%,rgb(0, 0, 0) 100%),url(./../img/mystery/mysteryPicMobile.jpeg) center/cover no-repeat,rgb(0, 9, 21);
+  }
+
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: var(--PaddingSectionMystery);
+
+    @include mobile {
+      padding-top: 40px;
+      padding-bottom: 487px;
+    }
+  }
+
+  &__title {
+    @include fluidText(32, 48);
+  }
+
+  &__desc {
+    @include fluidText(14, 18);
+
+    font-weight: 300;
+    line-height: 32px;
+    padding-block: 32px;
+
+    @include desktop {
+      padding-block: 14px;
+    }
+
+    @include tablet {
+      line-height: var(--lineHeightNormal);
+      max-width: 700px;
+    }
+
+    @include mobile {
+      padding-block: 32px;
+    }
+  }
+}

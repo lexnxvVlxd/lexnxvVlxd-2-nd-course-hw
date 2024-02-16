@@ -2,9 +2,9 @@
 @import 
   './base/reset',
   './base/base',
+  './base/media',
   './base/vars',
-  './base/mixin',
-  './base/media';
+  './base/mixin';
 
 // block
 
@@ -12,4 +12,7 @@
   './block/btn',
   './block/banner',
   './block/seasons',
-  './block/game';
+  './block/game',
+  './block/remember',
+  './block/mystery',
+  './block/footer';
