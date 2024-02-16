@@ -98,25 +98,35 @@
 //   (inputNum % 2 === 0) ? console.log('Это чётное число') : console.log('Это не чётное число')
 // }
 
-// Задание 8
+// Задание 8 // Задание 9
 
 // (0 — iOS, 1 — Android)
 
-let clientOS
-let userSelectsOS = prompt('Добрый день. Какой операционной системой вы пользуетесь? Введите название ("iOS" "Android")').toLowerCase()
+// let clientOS
+// let userSelectsOS = prompt('Добрый день. Какой операционной системой вы пользуетесь? Введите название ("iOS" "Android")').toLowerCase()
 
-if (userSelectsOS === 'android') {
-  clientOS = 1
-} else if (userSelectsOS === 'ios') {
-  clientOS = 0
-} else {
-  console.log('Ошибка: введены не коректные данные')
-}
+// if (userSelectsOS === 'android') {
+//   clientOS = 1
+// } else if (userSelectsOS === 'ios') {
+//   clientOS = 0
+// } else {
+//   console.log('Ошибка: введены не коректные данные операционной системы')
+// }
 
-if (clientOS === 1) {
-  console.log('Вы пользуетесь операционной системой "Android". Предлагаем установить наше мобильное приложение по ссылке (https://####.ru)')
-} else if (clientOS === 0) {
-  console.log('Вы пользуетесь операционной системой "iOS". Предлагаем установить наше мобильное приложение по ссылке (https://####.ru)')
-} else {
-  console.log('')
-}
+// let clientDeviceYear = 2015
+// let userSelectsYearPhone = Number(prompt('Введите год мобильного устройства'))
+
+
+// if (clientOS === 1 && userSelectsYearPhone <= clientDeviceYear) {
+//   console.log('Вы пользуетесь операционной системой "Android". Предлагаем установить нашу облегченную версию мобильного приложения по ссылке (https://####.ru)')
+// } else if (clientOS === 0 && userSelectsYearPhone <= clientDeviceYear) {
+//   console.log('Вы пользуетесь операционной системой "ios". Предлагаем установить нашу облегченную версию мобильного приложения по ссылке (https://####.ru)')
+// } else if (clientOS === 1 || clientOS === 0 && Number.isNaN(userSelectsYearPhone)) {
+//   console.log('Ошибка: введены не коректные данные "год мобильного устройства"')
+// } else if (clientOS === 1) {
+//   console.log('Вы пользуетесь операционной системой "Android". Предлагаем установить наше мобильное приложение по ссылке (https://####.ru)')
+// } else if (clientOS === 0) {
+//   console.log('Вы пользуетесь операционной системой "iOS". Предлагаем установить наше мобильное приложение по ссылке (https://####.ru)')
+// } else {
+//   console.log('')
+// }
