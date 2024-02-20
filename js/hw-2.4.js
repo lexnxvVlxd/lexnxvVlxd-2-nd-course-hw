@@ -6,8 +6,16 @@
 
 // Задание 2
 
-const number = 5
+// const number = 5
 
-for (let i = 1; i <= number; i++) {
+// for (let i = 1; i <= number; i++) {
+//   console.log(i)
+// }
+
+// Задание 3
+
+const number = 22
+
+for (let i = 7; i <= number; i++) {
   console.log(i)
 }
