@@ -47,12 +47,9 @@
 
 // Задание 6
 
-let firstFriday = 1 
+let firstFriday = 1
 let daysMonth = 31
 
-for (let i = 0; i <= daysMonth; i++) {
-  if (i === firstFriday) {
-    console.log(`Сегодня пятница, ${firstFriday} число. Необходимо подготовить отчет.`)
-    firstFriday += 7
-  }
+for (let i = 0; firstFriday <= daysMonth; firstFriday += 7) {
+  console.log(`Сегодня пятница, ${firstFriday} число. Необходимо подготовить отчет.`)
 }
