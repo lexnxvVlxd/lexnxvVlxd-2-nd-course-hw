@@ -34,13 +34,25 @@
 
 // Задание 5
 
-let n = 1000
-let num = 0
+// let n = 1000
+// let num = 0
 
-while (n > 50) {
-  n /= 2
-  num += 1
+// while (n > 50) {
+//   n /= 2
+//   num += 1
+// }
+
+// console.log(`Если делить 1000 на 2 пока число не станет меньше 50 получится ${n}`)
+// console.log(`Кол-во итераций ${num}`)
+
+// Задание 6
+
+let firstFriday = 1 
+let daysMonth = 31
+
+for (let i = 0; i <= daysMonth; i++) {
+  if (i === firstFriday) {
+    console.log(`Сегодня пятница, ${firstFriday} число. Необходимо подготовить отчет.`)
+    firstFriday += 7
+  }
 }
-
-console.log(`Если делить 1000 на 2 пока число не станет меньше 50 получится ${n}`)
-console.log(`Кол-во итераций ${num}`)
