@@ -1,5 +1,11 @@
 //task №1
 
-const lesserTwo = (numberOne, numberTwo) => {
-  return numberOne <= numberTwo ? numberOne : numberTwo
-}
+// const calculatesSmallerNumber = (numberOne, numberTwo) => {
+//   return numberOne <= numberTwo ? numberOne : numberTwo
+// }
+
+//task №2
+
+// const checksNumberIsEven = (number) => {
+//   return number % 2 === 0 ? 'Это чётное число' : 'Это не чётное число'
+// }
