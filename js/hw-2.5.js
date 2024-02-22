@@ -9,3 +9,9 @@
 // const checksNumberIsEven = (number) => {
 //   return number % 2 === 0 ? 'Это чётное число' : 'Это не чётное число'
 // }
+
+//task №3
+
+const squaresNumber = (number) => {
+  return number * number
+}
