@@ -93,6 +93,8 @@ const gameSeasons = () => {
   let entryNumber = Number(prompt('Номер месяца'))
 
   switch (entryNumber) {
+    case 0:
+      return
     case 12:
     case 1:
     case 2:
