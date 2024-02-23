@@ -59,29 +59,57 @@
 
 //task №7 
 
-function getArea() {
-  const tt = 3.14
-  return result = tt * (this.radius ** 2)
-}
+// function getArea() {
+//   const tt = 3.14
+//   return result = tt * (this.radius ** 2)
+// }
 
-function getPerimeter() {
-  const tt = 3.14
-  return result = tt * 2 * this.radius
-}
+// function getPerimeter() {
+//   const tt = 3.14
+//   return result = tt * 2 * this.radius
+// }
 
-const circle1 = {
-  radius: 15,
-  area: getArea,
-  perimeter: getPerimeter,
-}
+// const circle1 = {
+//   radius: 15,
+//   area: getArea,
+//   perimeter: getPerimeter,
+// }
 
-const circle2 = {
-  radius: 30,
-  area: getArea,
-  perimeter: getPerimeter,
-}
+// const circle2 = {
+//   radius: 30,
+//   area: getArea,
+//   perimeter: getPerimeter,
+// }
 
-console.log(circle1.area())
-console.log(circle1.perimeter())
-console.log(circle2.area())
-console.log(circle2.perimeter())
+// console.log(circle1.area())
+// console.log(circle1.perimeter())
+// console.log(circle2.area())
+// console.log(circle2.perimeter())
+
+//task №8
+
+const gameSeasons = () => {
+
+  let entryNumber = Number(prompt('Номер месяца'))
+
+  switch (entryNumber) {
+    case 12:
+    case 1:
+    case 2:
+      return alert('Зима!')
+    case 3:
+    case 4:
+    case 5:
+      return alert('Весна!')
+    case 6:
+    case 7:
+    case 8:
+      return alert('Лето!')
+    case 9:
+    case 10:
+    case 11:
+      return alert('Осень!')
+    default:
+      return alert('что то пошло не так')
+  }
+}
