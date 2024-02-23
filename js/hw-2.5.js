@@ -43,16 +43,45 @@
 
 //task №6
 
-const CubeNumber = () => {
-  let enteredNumber = prompt('Введите любое число')
+// const CubeNumber = () => {
+//   let enteredNumber = prompt('Введите любое число')
 
-  if (enteredNumber === null) {
-    return
-  } else if (!Number.isNaN(enteredNumber ** 3)) {
-    return `${enteredNumber} в кубе равняется <${enteredNumber ** 3}>`
-  } else {
-    return 'Одно или оба значения не являются числом'
-  }
+//   if (enteredNumber === null) {
+//     return
+//   } else if (!Number.isNaN(enteredNumber ** 3)) {
+//     return `${enteredNumber} в кубе равняется <${enteredNumber ** 3}>`
+//   } else {
+//     return 'Одно или оба значения не являются числом'
+//   }
+// }
+
+// console.log(CubeNumber())
+
+//task №7 
+
+function getArea() {
+  const tt = 3.14
+  return result = tt * (this.radius ** 2)
 }
 
-console.log(CubeNumber())
+function getPerimeter() {
+  const tt = 3.14
+  return result = tt * 2 * this.radius
+}
+
+const circle1 = {
+  radius: 15,
+  area: getArea,
+  perimeter: getPerimeter,
+}
+
+const circle2 = {
+  radius: 30,
+  area: getArea,
+  perimeter: getPerimeter,
+}
+
+console.log(circle1.area())
+console.log(circle1.perimeter())
+console.log(circle2.area())
+console.log(circle2.perimeter())
