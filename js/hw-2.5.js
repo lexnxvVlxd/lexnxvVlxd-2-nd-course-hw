@@ -36,7 +36,23 @@
 
 //task №5
 
-const multiplyNumbers = (num1, num2) => {
-  return !Number.isNaN(num1 * num2) ? 
-  num1 * num2 : 'Одно или оба значения не являются числом';
+// const multiplyNumbers = (num1, num2) => {
+//   return !Number.isNaN(num1 * num2) ? 
+//   num1 * num2 : 'Одно или оба значения не являются числом';
+// }
+
+//task №6
+
+const CubeNumber = () => {
+  let enteredNumber = prompt('Введите любое число')
+
+  if (enteredNumber === null) {
+    return
+  } else if (!Number.isNaN(enteredNumber ** 3)) {
+    return `${enteredNumber} в кубе равняется <${enteredNumber ** 3}>`
+  } else {
+    return 'Одно или оба значения не являются числом'
+  }
 }
+
+console.log(CubeNumber())
