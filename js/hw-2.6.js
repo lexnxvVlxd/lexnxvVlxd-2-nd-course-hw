@@ -58,8 +58,24 @@
 
 // task №6
 
-const arr = [9, 8, 7, 'a', 6, 5]
+// const arr = [9, 8, 7, 'a', 6, 5]
 
-const filterArr = arr.sort().filter(num => typeof(num) === 'number')
+// const filterArr = arr.sort().filter(num => typeof(num) === 'number')
 
-console.log(filterArr)
+// console.log(filterArr)
+
+// task №7
+
+const arr = [9, 8, 7, 6, 5]
+
+const guessNumber = (num) => {
+  let inputNumber = Number(prompt('Угадай число которое я загал от 1 до 10'))
+
+  if (arr.includes(inputNumber)) {
+    return alert('Угадал')
+  } else {
+    return alert('Не правильно')
+  }
+}
+
+guessNumber()
