@@ -66,16 +66,24 @@
 
 // task №7
 
-const arr = [9, 8, 7, 6, 5]
+// const arr = [9, 8, 7, 6, 5]
 
-const guessNumber = (num) => {
-  let inputNumber = Number(prompt('Угадай число которое я загал от 1 до 10'))
+// const guessNumber = (num) => {
+//   let inputNumber = Number(prompt('Угадай число которое я загал от 1 до 10'))
 
-  if (arr.includes(inputNumber)) {
-    return alert('Угадал')
-  } else {
-    return alert('Не правильно')
-  }
-}
+//   if (arr.includes(inputNumber)) {
+//     return alert('Угадал')
+//   } else {
+//     return alert('Не правильно')
+//   }
+// }
 
-guessNumber()
+// guessNumber()
+
+// task №8
+
+let str = 'abcdef'
+
+str = str.split('').reverse().join('')
+
+console.log(str)
