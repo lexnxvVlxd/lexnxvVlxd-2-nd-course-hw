@@ -23,8 +23,25 @@
 
 // task №3
 
-const arr = [1, 3, 5, 10, 20]
+// const arr = [1, 3, 5, 10, 20]
 
-let str = arr.join(' ')
+// let str = arr.join(' ')
 
-console.log(str)
+// console.log(str)
+
+// task №4
+
+const multidimensionalArr = []
+let numberIterations = 3
+
+for (let i = 0; i < numberIterations; i++) {
+  let subMultidimensionalArr = []
+
+  for (let i = 0; i < numberIterations; i++) {
+    subMultidimensionalArr.push(1)
+  }
+
+  multidimensionalArr.push(subMultidimensionalArr)
+}
+
+console.log(multidimensionalArr)
