@@ -49,8 +49,17 @@
 
 // task №5 
 
-const arr = [1, 1, 1]
+// const arr = [1, 1, 1]
 
-arr.push(2, 2, 2)
+// arr.push(2, 2, 2)
 
-console.log(arr)
+// console.log(arr)
+
+
+// task №6
+
+const arr = [9, 8, 7, 'a', 6, 5]
+
+const filterArr = arr.sort().filter(num => typeof(num) === 'number')
+
+console.log(filterArr)
