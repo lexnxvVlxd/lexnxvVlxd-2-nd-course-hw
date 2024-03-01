@@ -82,8 +82,20 @@
 
 // task №8
 
-let str = 'abcdef'
+// let str = 'abcdef'
 
-str = str.split('').reverse().join('')
+// str = str.split('').reverse().join('')
 
-console.log(str)
+// console.log(str)
+
+// task №9
+
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [4, 5, 6],
+]
+
+const newArr = [...arr[0], ...arr[1]]
+
+console.log(newArr)
