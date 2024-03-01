@@ -31,17 +31,26 @@
 
 // task №4
 
-const multidimensionalArr = []
-let numberIterations = 3
+// const multidimensionalArr = []
+// let numberIterations = 3
 
-for (let i = 0; i < numberIterations; i++) {
-  let subMultidimensionalArr = []
+// for (let i = 0; i < numberIterations; i++) {
+//   let subMultidimensionalArr = []
 
-  for (let i = 0; i < numberIterations; i++) {
-    subMultidimensionalArr.push(1)
-  }
+//   for (let i = 0; i < numberIterations; i++) {
+//     subMultidimensionalArr.push(1)
+//   }
 
-  multidimensionalArr.push(subMultidimensionalArr)
-}
+//   multidimensionalArr.push(subMultidimensionalArr)
+// }
 
-console.log(multidimensionalArr)
+// console.log(multidimensionalArr)
+
+
+// task №5 
+
+const arr = [1, 1, 1]
+
+arr.push(2, 2, 2)
+
+console.log(arr)
