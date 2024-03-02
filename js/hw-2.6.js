@@ -137,10 +137,31 @@
 
 // task №13
 
-const arr = [1, -3, -5, -2, 7, -9, 1, -4]
+// const arr = [1, -3, -5, -2, 7, -9, 1, -4]
 
-const filterNegativeNumber = (arr) => {
-  return arr.filter(ngtArr => ngtArr < 0)
+// const filterNegativeNumber = (arr) => {
+//   return arr.filter(ngtArr => ngtArr < 0)
+// }
+
+// console.log(filterNegativeNumber(arr))
+
+// task №14
+
+
+const array = []
+
+const getRandomNumber = (min, max) => {
+  return Math.round(Math.random() * (max - min) + min)
 }
 
-console.log(filterNegativeNumber(arr))
+
+for (let i = 0; i <= 10; i++) {
+  array.push(getRandomNumber(0, 10))
+}
+
+const evenNumbersArray = (arr) => {
+  let evenArray = arr.filter(evn => evn % 2 === 0)
+  return evenArray
+}
+console.log(array)
+console.log(evenNumbersArray(array))
