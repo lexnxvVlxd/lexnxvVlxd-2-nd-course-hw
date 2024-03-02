@@ -127,10 +127,20 @@
 
 // task №12
 
-const arr = ['one', 'two', 'three', 'four', 'five', 'skypro']
+// const arr = ['one', 'two', 'three', 'four', 'five', 'skypro']
 
-const lineLength = (arr) => {
-  return arr.map(lng => lng.length)
+// const lineLength = (arr) => {
+//   return arr.map(lng => lng.length)
+// }
+
+// console.log(lineLength(arr))
+
+// task №13
+
+const arr = [1, -3, -5, -2, 7, -9, 1, -4]
+
+const filterNegativeNumber = (arr) => {
+  return arr.filter(ngtArr => ngtArr < 0)
 }
 
-console.log(lineLength(arr))
+console.log(filterNegativeNumber(arr))
