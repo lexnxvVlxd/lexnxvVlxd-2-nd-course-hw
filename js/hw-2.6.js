@@ -147,6 +147,25 @@
 
 // task №14
 
+// const array = []
+
+// const getRandomNumber = (min, max) => {
+//   return Math.round(Math.random() * (max - min) + min)
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//   array.push(getRandomNumber(0, 10))
+// }
+
+// const evenNumbersArray = (arr) => {
+//   let evenArray = arr.filter(evn => evn % 2 === 0)
+//   return evenArray
+// }
+
+// console.log(array)
+// console.log(evenNumbersArray(array))
+
+// task №15
 
 const array = []
 
@@ -154,14 +173,14 @@ const getRandomNumber = (min, max) => {
   return Math.round(Math.random() * (max - min) + min)
 }
 
-for (let i = 0; i <= 10; i++) {
+for (let i = 0; i < 6; i++) {
   array.push(getRandomNumber(0, 10))
 }
 
-const evenNumbersArray = (arr) => {
-  let evenArray = arr.filter(evn => evn % 2 === 0)
-  return evenArray
-}
+const averageArr = (arr) => {
+  sumArr = arr.reduce((total, num) => total + num)
+  avrArr = sumArr / arr.length
+  return avrArr.toFixed(2)
+} 
 
-console.log(array)
-console.log(evenNumbersArray(array))
+console.log(averageArr(array))
