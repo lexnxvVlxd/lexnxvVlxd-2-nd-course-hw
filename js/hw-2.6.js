@@ -102,15 +102,25 @@
 
 // task №10
 
+// const arr = [1, 3, 5, 2, 7, 9, 1, 4]
+// let sumArr = 0 
+
+// for (let i = 0; i < arr.length; i++) {
+//   sumArr = arr[i] + arr[i + 1]
+
+//   if (Number.isNaN(sumArr)) {
+//     break
+//   }
+
+//   console.log(`Сумма значений массива ${sumArr}`)
+// }
+
+// task №11
+
 const arr = [1, 3, 5, 2, 7, 9, 1, 4]
-let sumArr = 0 
 
-for (let i = 0; i < arr.length; i++) {
-  sumArr = arr[i] + arr[i + 1]
-
-  if (Number.isNaN(sumArr)) {
-    break
-  }
-
-  console.log(`Сумма значений массива ${sumArr}`)
+const squareNumbers = (arr) => {
+  return arr.map(sqr => sqr ** 2)
 }
+
+console.log(squareNumbers(arr))
