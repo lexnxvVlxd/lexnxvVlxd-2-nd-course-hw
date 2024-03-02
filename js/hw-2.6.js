@@ -117,10 +117,20 @@
 
 // task №11
 
-const arr = [1, 3, 5, 2, 7, 9, 1, 4]
+// const arr = [1, 3, 5, 2, 7, 9, 1, 4]
 
-const squareNumbers = (arr) => {
-  return arr.map(sqr => sqr ** 2)
+// const squareNumbers = (arr) => {
+//   return arr.map(sqr => sqr ** 2)
+// }
+
+// console.log(squareNumbers(arr))
+
+// task №12
+
+const arr = ['one', 'two', 'three', 'four', 'five', 'skypro']
+
+const lineLength = (arr) => {
+  return arr.map(lng => lng.length)
 }
 
-console.log(squareNumbers(arr))
+console.log(lineLength(arr))
