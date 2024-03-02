@@ -90,12 +90,27 @@
 
 // task №9
 
-const arr = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [4, 5, 6],
-]
+// const arr = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [4, 5, 6],
+// ]
 
-const newArr = [...arr[0], ...arr[1]]
+// const newArr = [...arr[0], ...arr[1]]
 
-console.log(newArr)
+// console.log(newArr)
+
+// task №10
+
+const arr = [1, 3, 5, 2, 7, 9, 1, 4]
+let sumArr = 0 
+
+for (let i = 0; i < arr.length; i++) {
+  sumArr = arr[i] + arr[i + 1]
+
+  if (Number.isNaN(sumArr)) {
+    break
+  }
+
+  console.log(`Сумма значений массива ${sumArr}`)
+}
