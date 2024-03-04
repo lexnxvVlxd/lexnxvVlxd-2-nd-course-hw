@@ -66,21 +66,21 @@
 
 // task №7
 
-const arr = [9, 8, 7, 6, 5]
+// const arr = [9, 8, 7, 6, 5]
 
-const guessNumber = (num) => {
-  let inputNumber = Number(prompt('Угадай число которое я загал от 1 до 10'))
+// const guessNumber = () => {
+//   let inputNumber = Number(prompt('Угадай число которое я загал от 1 до 10'))
 
-  if (Number.isNaN(inputNumber)) {
-    alert('Ошибка: некорректное значение')
-  } else if (arr.includes(inputNumber)) {
-    return alert('Угадал')
-  } else {
-    return alert('Не правильно')
-  }
-}
+//   if (isNaN(inputNumber)) {
+//     alert('Ошибка: некорректное значение')
+//   } else if (arr.includes(inputNumber)) {
+//     return alert('Угадал')
+//   } else {
+//     return alert('Не правильно')
+//   }
+// }
 
-guessNumber()
+// guessNumber()
 
 // task №8
 
@@ -107,7 +107,7 @@ guessNumber()
 // for (let i = 0; i < arr.length; i++) {
 //   sumArr = arr[i] + arr[i + 1]
 
-//   if (Number.isNaN(sumArr)) {
+//   if (isNaN(sumArr)) {
 //     break
 //   }
 
