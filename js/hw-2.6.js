@@ -90,15 +90,12 @@
 
 // task №9
 
-// const arr = [
-//   [1, 2, 3],
-//   [4, 5, 6],
-//   [4, 5, 6],
-// ]
-
-// const newArr = [...arr[0], ...arr[1]]
-
-// console.log(newArr)
+const arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [4, 5, 6],
+]
+console.log(arr.flat())
 
 // task №10
 
@@ -167,20 +164,20 @@
 
 // task №15
 
-const array = []
+// const array = []
 
-const getRandomNumber = (min, max) => {
-  return Math.round(Math.random() * (max - min) + min)
-}
+// const getRandomNumber = (min, max) => {
+//   return Math.round(Math.random() * (max - min) + min)
+// }
 
-for (let i = 0; i < 6; i++) {
-  array.push(getRandomNumber(0, 10))
-}
+// for (let i = 0; i < 6; i++) {
+//   array.push(getRandomNumber(0, 10))
+// }
 
-const averageArr = (arr) => {
-  sumArr = arr.reduce((total, num) => total + num)
-  avrArr = sumArr / arr.length
-  return avrArr.toFixed(2)
-} 
+// const averageArr = (arr) => {
+//   sumArr = arr.reduce((total, num) => total + num)
+//   avrArr = sumArr / arr.length
+//   return avrArr.toFixed(2)
+// } 
 
-console.log(averageArr(array))
+// console.log(averageArr(array))
