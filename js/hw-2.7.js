@@ -25,9 +25,16 @@
 
 // task №3
 
-let num = 32.58884
+// let num = 32.58884
 
-console.log(`Округлённое число до меньшего ${Math.floor(num)}, 
-до большего ${Math.ceil(num)}, 
-до ближайшего ${Math.round(num)}`
-)
+// console.log(`Округлённое число до меньшего ${Math.floor(num)}, 
+// до большего ${Math.ceil(num)}, 
+// до ближайшего ${Math.round(num)}`
+// )
+
+// task №4
+
+const arr = [52, 53, 49, 77, 21, 32]
+
+console.log(`Максимальное значение чисел: ${Math.max(...arr)}
+Минимальное значение чисел: ${Math.min(...arr)}`)
