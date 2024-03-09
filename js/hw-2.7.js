@@ -72,5 +72,11 @@
 
 // task №8
 
-let currentDate = new Date()
-console.log(currentDate.toLocaleDateString())
+// let currentDate = new Date()
+// console.log(currentDate.toLocaleDateString())
+
+// task №9
+
+const currentDay = new Date().getDate()
+const dateIn73Days = new Date(new Date().setDate(currentDay + 73))
+console.log(dateIn73Days)
