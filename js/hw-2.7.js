@@ -41,9 +41,23 @@
 
 // task №5
 
-const randomNumber = () => {
-  let num = Math.floor(Math.random() * 10)
-  return num
+// const randomNumber = () => {
+//   let num = Math.floor(Math.random() * 10)
+//   return num
+// }
+
+// console.log(randomNumber())
+
+// task №6
+
+const arrRandomNumber = (num) => {
+  let arr = []
+
+  for (let i = 0; i < num / 2; i++) {
+    arr.push(Math.floor(Math.random() * num))
+  }
+
+  return arr
 }
 
-console.log(randomNumber())
+console.log(arrRandomNumber(50))
