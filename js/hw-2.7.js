@@ -83,15 +83,50 @@
 
 // task №10
 
-let currentDate = new Date()
+// let currentDate = new Date()
 
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
-"Пятница", "Суббота"]
+// const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
+// "Пятница", "Суббота"]
 
-const months = ["Январь", "Февраль", "Марта", "Апрель", "Май", "Июнь",
-"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+// const months = ["Январь", "Февраль", "Марта", "Апрель", "Май", "Июнь",
+// "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
 
-let fullDate = `Дата: ${currentDate.getDate()} ${months[currentDate.getMonth()]} ${currentDate.getFullYear()} — это ${days[currentDate.getDay()]}
-Время: ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`
+// let fullDate = `Дата: ${currentDate.getDate()} ${months[currentDate.getMonth()]} ${currentDate.getFullYear()} — это ${days[currentDate.getDay()]}
+// Время: ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`
 
-console.log(fullDate)
+// console.log(fullDate)
+
+// task №11
+
+const arrayWithWordsForGame = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']
+const regExp = /^[а-яА-Я]*$/
+
+const gameTwoRandomWords = () => {
+
+  let getRandomWordOne = arrayWithWordsForGame[Math.floor(Math.random() 
+    * arrayWithWordsForGame.length)]
+
+  let getRandomWordTwo = arrayWithWordsForGame[Math.floor(Math.random() 
+    * arrayWithWordsForGame.length)]
+
+  alert(`Запомни два слова: "${getRandomWordOne}" "${getRandomWordTwo}"`)
+
+  alert('Отлично теперь посмотрим как ты их запомнил!')
+
+  let userInputFirstWord = prompt('Какое было первое слово?').toLowerCase()
+  let userInputSecondWord = prompt('Какое было второе слово?').toLowerCase()
+
+  if (!regExp.test(userInputFirstWord) || !regExp.test(userInputSecondWord)) {
+    return alert('Введены некорректные символы')
+  }
+
+  if (getRandomWordOne.toLowerCase() === userInputFirstWord 
+  && getRandomWordTwo.toLowerCase() === userInputSecondWord) {
+    return alert('Правильно!!!')
+  } else if (getRandomWordOne.toLowerCase() === userInputFirstWord 
+  || getRandomWordTwo.toLowerCase() === userInputSecondWord) {
+    return alert('Почти что получилось одно слово оказалось не правильным.')
+  } else {
+    return alert('Неправильно!')
+  }
+}
