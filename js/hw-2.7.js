@@ -77,6 +77,21 @@
 
 // task №9
 
-const currentDay = new Date().getDate()
-const dateIn73Days = new Date(new Date().setDate(currentDay + 73))
-console.log(dateIn73Days)
+// const currentDay = new Date().getDate()
+// const dateIn73Days = new Date(new Date().setDate(currentDay + 73))
+// console.log(dateIn73Days)
+
+// task №10
+
+let currentDate = new Date()
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
+"Пятница", "Суббота"]
+
+const months = ["Январь", "Февраль", "Марта", "Апрель", "Май", "Июнь",
+"Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+
+let fullDate = `Дата: ${currentDate.getDate()} ${months[currentDate.getMonth()]} ${currentDate.getFullYear()} — это ${days[currentDate.getDay()]}
+Время: ${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}`
+
+console.log(fullDate)
