@@ -50,14 +50,22 @@
 
 // task №6
 
-const arrRandomNumber = (num) => {
-  let arr = []
+// const arrRandomNumber = (num) => {
+//   let arr = []
 
-  for (let i = 0; i < num / 2; i++) {
-    arr.push(Math.floor(Math.random() * num))
-  }
+//   for (let i = 0; i < num / 2; i++) {
+//     arr.push(Math.floor(Math.random() * num))
+//   }
 
-  return arr
+//   return arr
+// }
+
+// console.log(arrRandomNumber(50))
+
+// task №7
+
+const randomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-console.log(arrRandomNumber(50))
+console.log(randomNumber(10, 20))
