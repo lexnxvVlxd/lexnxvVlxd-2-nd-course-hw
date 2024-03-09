@@ -64,8 +64,13 @@
 
 // task №7
 
-const randomNumber = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
+// const randomNumber = (min, max) => {
+//   return Math.floor(Math.random() * (max - min + 1)) + min
+// }
 
-console.log(randomNumber(10, 20))
+// console.log(randomNumber(10, 20))
+
+// task №8
+
+let currentDate = new Date()
+console.log(currentDate.toLocaleDateString())
