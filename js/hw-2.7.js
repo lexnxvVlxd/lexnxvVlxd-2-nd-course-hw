@@ -34,7 +34,16 @@
 
 // task №4
 
-const arr = [52, 53, 49, 77, 21, 32]
+// const arr = [52, 53, 49, 77, 21, 32]
 
-console.log(`Максимальное значение чисел: ${Math.max(...arr)}
-Минимальное значение чисел: ${Math.min(...arr)}`)
+// console.log(`Максимальное значение чисел: ${Math.max(...arr)}
+// Минимальное значение чисел: ${Math.min(...arr)}`)
+
+// task №5
+
+const randomNumber = () => {
+  let num = Math.floor(Math.random() * 10)
+  return num
+}
+
+console.log(randomNumber())
