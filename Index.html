@@ -20,29 +20,31 @@
           <h1 class="banner__title">Добро пожаловать<br> на мой сайт !</h1>
           <p class="banner__desc">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="banner__desc--textBold">поехали</span> и <span class="banner__desc--textBold">приступай</span>
           </p>
-          <button class="banner__btn button" type="button">Поехали!</button>
+          <a href="#game">
+            <button class="banner__btn button" type="button" href="#game">Поехали!</button>
+          </a>
         </div>
       </div>
     </div>
-    <section class="game">
+    <section class="game" id="game">
       <h2 class="game__title visually-hidden">Game</h2>
       <div class="container">
         <div class="game__content">
           <ul class="game__list">
             <li class="game__item">
-              <a href="#" class="game__link">
+              <a href="#gameOne" class="game__link">
                 <img class="game__img" src="./img/game/gamePic1.jpeg" alt="picture with a man">
                 <span class="game__text">Игра 1</span>
               </a>
             </li>
             <li class="game__item">
-              <a href="#" class="game__link">
+              <a href="#gameTwo" class="game__link">
                 <img class="game__img" src="./img/game/gamePic2.jpeg" alt="picture with a man">
                 <span class="game__text">Игра 2</span>
               </a>
             </li>
             <li class="game__item">
-              <a href="#" class="game__link">
+              <a href="#gameThree" class="game__link">
                 <img class="game__img" src="./img/game/gamePic3.jpeg" alt="picture with a girl">
                 <span class="game__text">Игра 3</span>
               </a>
@@ -51,7 +53,7 @@
         </div>
       </div>
     </section>
-    <section class="seasons">
+    <section class="seasons" id="gameOne">
       <div class="seasons__content container">
         <div class="seasons__body">
           <h2 class="seasons__title">Времена года!</h2>
@@ -61,7 +63,7 @@
         <img class="seasons__img" src="./img/seasons/seasonsPic01.svg" alt="graphic image" loading="lazy">
       </div>
     </section>
-    <section class="remember">
+    <section class="remember" id="gameTwo">
       <div class="remember__content container">
         <div class="remember__body">
           <h2 class="remember__title">Запомни слова</h2>
@@ -71,7 +73,7 @@
         <img class="remember__img" src="./img/remember/rememberPic01.svg" alt="graphic image" loading="lazy">
       </div>
     </section>
-    <section class="mystery">
+    <section class="mystery" id="gameThree">
       <div class="container">
         <div class="mystery__body">
           <h2 class="mystery__title">Игра в загадки</h2>
