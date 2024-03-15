@@ -48,3 +48,18 @@
 
 // console.log(filter(arrNumbres, isPositive))
 // console.log(filter(people, isMale))
+
+// task №3 
+
+// const showsDateThreeSeconds = () => {
+//   const interval = setInterval(() => {
+//     console.log(Date())
+//   }, 3000);
+
+//   setTimeout(() => {
+//     clearInterval(interval)
+//     console.log('30 секунд прошло')
+//   }, 33000);
+// }
+
+// showsDateThreeSeconds()
