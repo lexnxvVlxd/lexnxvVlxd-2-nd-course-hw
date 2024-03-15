@@ -37,7 +37,7 @@
 //   let newArr = []
 
 //   for (let i = 0; i < arr.length; i++) {
-    
+
 //     if (callback(arr[i])) {
 //       newArr.push(callback(arr[i]))
 //     }
@@ -63,3 +63,15 @@
 // }
 
 // showsDateThreeSeconds()
+
+// task №4
+
+// function delayForSecond(callback) {
+//   setTimeout(() => {
+//     callback()
+//   }, 1000);
+// }
+
+// delayForSecond(function () {
+//   console.log('Привет, Глеб!');
+// })
