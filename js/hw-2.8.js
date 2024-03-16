@@ -51,18 +51,14 @@
 
 // task №3 
 
-// const showsDateThreeSeconds = () => {
-//   const interval = setInterval(() => {
-//     console.log(Date())
-//   }, 3000);
+  const interval = setInterval(() => {
+    console.log(Date())
+  }, 3000);
 
-//   setTimeout(() => {
-//     clearInterval(interval)
-//     console.log('30 секунд прошло')
-//   }, 33000);
-// }
-
-// showsDateThreeSeconds()
+  setTimeout(() => {
+    clearInterval(interval)
+    console.log('30 секунд прошло')
+  }, 33000);
 
 // task №4
 
@@ -97,4 +93,4 @@ function sayHi (name) {
 // Нужно изменить код ниже:
 
 
-delayForSecond(() => sayHi('Глеб'))
+// delayForSecond(() => sayHi('Глеб'))
